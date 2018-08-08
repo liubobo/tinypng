@@ -1,10 +1,15 @@
-import tinify
-import os 
-tinify.key = 'cRIu54yRk8ubjhkNK4a3-DdKNUKHJdTm'
+# pip install  tinify
 
-for root, dirs, files in os.walk("./guide_pic", topdown=False):
+import tinify
+import os,sys
+tinify.key = 'cRIu54yRk8ubjhkNK4a3-DdKNUKHJdTm'
+pic_path =  sys.argv[1]
+
+for root, dirs, files in os.walk(pic_path, topdown=False):
 	for file  in files:
 		  if file.endswith('png'):
 		  	  print file
-			  print tinify.from_file(root+'/' + file).to_file(root+'/' + file)
+			  tinify.from_file(root+'/' + file).to_file(root+'/' + file)
+
+print '--------finish--------'
 
