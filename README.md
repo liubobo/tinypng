@@ -9,5 +9,5 @@
 
 1.安装pip</br>
 2.pip install  tinify</br>
-3.在  https://tinypng.com 获取tinify.key  'cRIu54yRk8ubjhkNK4a3-DdKNUKHJdTm' ，这个key有次数限制，还请自行申请</br>
+3.在  https://tinypng.com 获取tinify.key 替换 'cRIu54yRk8ubjhkNK4a3-DdKNUKHJdTm' ，这个key有次数限制，还请自行申请</br>
 3.python tinypng.py pic_dir</br>
